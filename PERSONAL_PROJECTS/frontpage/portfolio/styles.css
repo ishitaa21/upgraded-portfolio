@@ -1,0 +1,298 @@
+
+/* Particles container */
+#particles-js {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: -1;
+   background-image: linear-gradient(to left, white,white,rgba(245, 194, 238, 0.882));
+}
+
+    html, body {
+        
+        min-height: 100vh; /* Ensure body and html take up full height */
+        width: 100%; /* Ensure body and html take up full width */
+       
+        
+    }
+
+
+#about , #education, #contacts{ /* so that the particle js doesnt come, and gradient on right side*/
+    z-index: 5;
+    padding-top: 5rem;
+    background-image: linear-gradient(to right, white,white,pink);
+}
+#skills, #projects{/* so that the particle js doesnt come, and gradient on left side*/
+    z-index: 5;
+    padding-top: 5rem;
+    background-image: linear-gradient(to left, white,white,pink);
+}
+#home, #about , #education, #projects, #contacts{
+  min-height: 100vh; /* 100% of the viewport height */
+        width: 100vw;  /* 100% of the viewport width */        
+}/*taking up the entire page*/
+
+ #skills,#contacts{
+    padding-bottom: 5rem;
+ }
+
+ 
+
+
+
+.hover:hover  {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 12px; /* Adjusts the spacing from the text */
+  
+
+  color: blue !important;
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: rgba(7, 7, 7, 0.2) !important; /* white with 20% opacity */
+  /*backdrop-filter: blur(8px); /* optional frosted glass look */
+  box-shadow: 0 0 10px #070707;
+  z-index: 100;
+}
+
+
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    color: blue;
+    padding-top: 5rem;
+    
+}
+ .orange{
+  color: orange;
+
+ }
+
+ .typejs{
+  font-size: 2rem;
+
+ }
+.firstsection>div {
+    width: 40%;
+}
+
+/*> is used to apply the style to only the first div*/
+.leftsection {
+    font-size: 3.5rem;
+    width: auto;
+    margin-left: 5rem;
+
+}
+
+
+#element {
+    color: red;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(63, 63, 223);
+    font-size: 1.04rem;
+}
+
+
+ .btn {
+    /*a, denotes all anchor tags*/
+    transition: all 300ms ease !important
+}
+
+.btn {
+
+    background-color: rgb(6, 6, 48);
+    
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    margin: 15px 0px;
+    border: 2px solid blue;
+    cursor: pointer;
+
+}
+#socials-container{
+  display: flex;
+
+  text-align: left;
+}
+
+#socials-container a{
+  
+  font-size: 1.5rem;
+}
+.rightsection img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+/*responsive image*/
+@media (max-width: 992px) {
+    .rightsection {
+        max-width: 350px;
+        margin-top: 2rem;
+    }
+    .leftsection{
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .rightsection {
+        max-width: 0;
+        margin-top: 2rem;
+    }
+
+.leftsection{
+        margin-top: 10rem;
+    }
+}
+
+#about{
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+    /*background-image: conic-gradient(red,green,blue,red);/*creates gradient*/  
+padding-right: 7rem;
+    
+}
+
+.imgg{
+  max-width: 50%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding:5px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+
+ 
+/*helps make the spinning border*/
+.imgg::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: conic-gradient(from var(--angle), blue,black,yellow,orange,pink,red,white,blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: inherit;
+  padding: 3px;
+  z-index: -1;
+  animation: spin 3s linear infinite;
+ /* -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  /*-webkit-mask-composite: xor; /* cuts out the inner area */
+         /*mask-composite: exclude;*/
+}
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+/*end of spinning border*/
+
+#skills .bg-card, #education .bg-card{
+    background-image: linear-gradient(to right, white,white,rgba(245, 194, 238, 0.882));;
+}
+
+.heads h1,.card-text{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#education .bg-card{
+    background-image: linear-gradient(to left, white,white,rgba(245, 194, 238, 0.882));
+    border: 0;
+}
+
+#education .clgname h4{
+    color: #fc6c85;
+}
+#education .nav-pills .nav-link.active {
+    background-color:  #fc8eac; /* your desired background color (green in this example) */
+    color: #ffffff; /* text color */
+}
+
+#education .list-group-item{
+    background-color: #90e0ef;
+}
+
+
+
+.scale-on-hover {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .scale-on-hover:hover {
+    transform: scale(1.1); /* Increase size by 20% */
+  }
+
+/*  /* Fade-in transition for whole page *//*
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}*/
+
+/* After the page loads *//*
+body.fade-in {
+  opacity: 1;
+}*/
+
+#education .clg-crse {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+ 
+}
+
+#education .clg-crse:hover {
+  transform: scale(1.05);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* dark background for contrast */
+  border-radius: 50%;
+  background-size: 60%, 60%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}

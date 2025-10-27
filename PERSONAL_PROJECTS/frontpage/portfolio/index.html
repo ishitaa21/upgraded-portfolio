@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+</head>
+
+<body>
+  <div id="particles-js"></div>
+
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top  ">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5 ms-5" href="#">Ishita Sarkar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ishita</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end  flex-grow-1 pe-5 me-5">
+
+
+
+
+            <a class="nav-link active hover" aria-current="page" href="#home">Home</a>
+            <a class="nav-link active hover" aria-current="page" href="#about">About</a>
+            <a class="nav-link active hover" aria-current="page" href="#skills">Skills</a>
+            <a class="nav-link active hover" aria-current="page" href="#education">Education</a>
+            <a class="nav-link active hover" aria-current="page" href="#projects">Projects</a>
+            <!--<a class="nav-link active hover" aria-current="page" href="#experience">Experience</a>-->
+            <a class="nav-link active hover" aria-current="page" href="#contacts">Contact </a>
+            <a class="nav-link active hover" aria-current="page" href="../index.html">Close</a>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <section class="firstsection">
+      <div class="leftsection display-4 fw-bold">Hi,I'm <span class="orange">Ishita Sarkar</span>
+        <div class="typejs">I'm <span id="element"></span> </div><!-- used typed js-->
+        <!--used typed js befor this to include animated sntence,span-->
+
+        <btn class="btn" onclick="window.open('./assets/resume-example.pdf')">Download CV </btn>
+        <!--window.open(...) ---opens in an entirely different window-->
+
+        <div id="socials-container">
+
+
+
+          <a href="https://www.linkedin.com/in/ishita-sarkar-a47a9626b" target="_blank"><i
+              class="bi bi-linkedin fs-2 pe-0 ps-4"></i></a>
+          <a href="https://github.com/ishitaa21" target="_blank"><i class="bi bi-github fs-2 ps-3"></i></a>
+
+        </div>
+      </div>
+
+      <div class="rightsection"><img src=".\assets\pngimg.png" class="img-fluid profile-img"></div>
+
+    </section>
+
+  </section>
+
+  <section id="about">
+    <section id="right">
+      <div class="imgg  ">
+
+        <img src="./assets/check.jpg" alt="About" class="img-fluid rounded-3 shadow profile-img ">
+      </div>
+    </section>
+
+    <section id="left" class="ps-5 pe-0">
+      <div class="title">
+        <h2>Ishita~</h2>
+      </div>
+      <div>
+        <h6>Software Alchemist (A.K.A. Developer)</h6>
+      </div>
+
+      <div class="col-lg-8">
+        <p>I'm a passionate web developer with a strong foundation in modern web technologies. I love creating
+          beautiful, functional, and user-friendly websites that make a difference.</p>
+        <p>With expertise in front-end development and a keen eye for design, I strive to build digital experiences that
+          not only look great but also provide seamless functionality across all devices.</p>
+
+      </div>
+
+
+    </section>
+
+  </section>
+
+  <section id="skills">
+    <!-- Centers the image horizontally and takes up 75% of parent space (w-75 mx-auto d-block  )-->
+    <div class="heads "><h1>Skills and Abilities</h1></div>
+    <div class="container card bg-card p-4 ">
+      <div class="row g-3 ">
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover" 
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Force next columns to break to new line -->
+
+
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 scale-on-hover">
+          <div class="card" style="width: auto;">
+            <img class="card-img-top pt-3 w-75 mx-auto d-block scale-on-hover"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              alt="Card image cap">
+            <div class="card-body d-flex flex-column align-items-center">
+              <p class="card-text text-nowrap">Python<br>2nd line</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="education">
+<div class="heads "><h1>Education</h1></div>
+<div class="container card bg-card p-4 ">
+<div class="d-flex align-items-start p-4">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Bachelor's</button>
+    <!--<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Master's</button>--> <!--if you ever study masters-->
+    <!--<button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
+    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>-->
+  </div>
+  <div class="tab-content " id="v-pills-tabContent">
+    <div class="tab-pane fade show active p-4 ps-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0" >
+      <div><h3>Computer Science and Engineering</h3></div>
+      <div class="clgname p-3"><h4>Techno India University</h4></div>
+      <div class="date p-3">July 2022 - May 2025</div>
+      <div class="row g-3 justify-content-center ">
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card  text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0  ">Data Structures<br> and <br> Algorithms</p>
+    </div>
+  </div>
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0">A second item</p>
+    </div>
+  </div>
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0">A third item</p>
+    </div>
+  </div>
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0">A third item</p>
+    </div>
+  </div>
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0">A third item</p>
+    </div>
+  </div>
+  <div class="col-6 col-sm-3 col-md-2 clg-crse">
+    <div class="card text-center bg-info-subtle border-0 py-2">
+      <p class="mb-0">A third item</p>
+    </div>
+  </div>
+</div>
+
+</div> <!--for the masters tab working-->
+    <!--<div class="tab-pane fade p-4" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">..remrem.</div>-->
+  </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+  <section id="projects">
+  <div class="heads">
+    <h1>Projects</h1>
+  </div>
+
+  <div class="container card bg-card p-4">
+
+    <!-- Carousel wrapper -->
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">Python<br>2nd line</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">JavaScript<br>Web App</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">HTML Project<br>Portfolio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">CSS Effects<br>Animation</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">React<br>Weather App</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">Bootstrap<br>Portfolio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4">
+              <div class="card scale-on-hover">
+                <img class="card-img-top pt-3 w-75 mx-auto d-block"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="Card image cap">
+                <div class="card-body text-center">
+                  <p class="card-text">CSS Effects<br>Animation</p>
+                </div>
+              </div>
+            </div>
+          </div></div>
+
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+  <!--<section id="experience"></section>-->
+
+  <section id="contacts" class="py-5">
+   
+  <div class="container  p-5 border-0 shadow-sm">
+    <div class="row align-items-center g-5">
+      
+      <!-- Left side: illustration -->
+      <div class="col-md-5 text-center">
+        <img src=".\assets\contact.png" 
+             alt="Contact Illustration" class="img-fluid w-75">
+      </div>
+
+      
+
+      <!-- Right side: text -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">Contact</h2>
+        <hr class="w-25 border-warning border-3 opacity-100 mb-4">
+
+        <p class="text-secondary mb-4">Let’s get to know each other, or just drop me a message.</p>
+
+        <p class="text-secondary mb-2">If you’d like to reach me, you can contact me at:</p>
+
+        <div class="d-flex align-items-center mb-3">
+          <i class="bi bi-envelope-fill fs-4 text-dark me-3"></i>
+          <span class="fw-semibold">ishitasarkar400@gmail.com</span>
+        </div>
+
+        <div class="d-flex align-items-center mb-4">
+          <i class="bi bi-whatsapp fs-4 text-success me-3"></i>
+          <span class="fw-semibold">+91 9007427857</span>
+        </div>
+
+        <p class="text-secondary mb-3">Or connect with me on social media:</p>
+        <div class="d-flex gap-4">
+          <a href="https://www.linkedin.com/in/ishita-sarkar-a47a9626b" target="_blank" class="text-dark fs-3"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/ishitaa21" target="_blank" class="text-dark fs-3"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/ishitahaahaa?igsh=MW9mZm5hNWM4c3dwNQ==" target="_blank" class="text-dark fs-3"><i class="bi bi-instagram"></i></a>
+          <!--
+          <a href="https://www.instagram.com/ishitahaahaa?igsh=MW9mZm5hNWM4c3dwNQ==" class="text-dark fs-3"><i class="bi bi-twitter"></i></a>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script><!--used typed js-->
+  <!-- used typed js-->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic designer', 'web designer', 'video editor'],
+      typeSpeed: 50,
+      backSpeed: 25, // Backspacing speed in milliseconds
+      backDelay: 1000, // Delay before backspacing starts
+      startDelay: 500, // Delay before typing starts
+      loop: true, // Whether to loop the animation
+      showCursor: true, // Whether to show a blinking cursor
+      cursorChar: '|', // The character to use for the cursor
+    });
+  </script><!--for typed js-->
+</body>
+
+</html>
